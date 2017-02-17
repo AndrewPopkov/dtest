@@ -60,14 +60,14 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="datamodel\RootObject.cs" />
+    <Compile Include="datamodel\property.cs" />
     <Compile Include="viewmodel\Command.cs" />
-    <Compile Include="viewmodel\mytexboxViewModel.cs" />
-    <Compile Include="viewmodel\NotifyPropertyChanged.cs" />
-    <Compile Include="view\myControls\Class1.cs" />
-    <Compile Include="view\myControls\mytexbox.xaml.cs">
-      <DependentUpon>mytexbox.xaml</DependentUpon>
+    <Compile Include="viewmodel\MainViewModel.cs" />
+    <Compile Include="viewmodel\mytexboxViewModel.cs">
+      <SubType>Code</SubType>
     </Compile>
+    <Compile Include="viewmodel\NotifyPropertyChanged.cs" />
+    <Compile Include="view\myControls\mytexbox.cs" />
     <Page Include="DictionarymyRes.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -85,10 +85,6 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="Resources\Style\mytexboxStyle.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="view\myControls\mytexbox.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

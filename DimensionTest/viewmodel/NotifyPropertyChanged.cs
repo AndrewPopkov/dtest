@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace DimensionTest.viewmodel
 {
-    class NotifyPropertyChanged : INotifyPropertyChanged
+    public class NotifyPropertyChanged : INotifyPropertyChanged
     {
         /// <summary>
         /// Событие, вызывается при изменении значений свойств.

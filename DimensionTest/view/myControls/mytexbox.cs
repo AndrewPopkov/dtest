@@ -6,20 +6,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace DimensionTest.view.myControls
 {
     /// <summary>
     /// Логика взаимодействия для mytexbox.xaml
     /// </summary>
-    public partial class mytexbox:TextBox
+    public partial class mytexbox : TextBox
     {
         //public mytexbox()
         //{
@@ -29,19 +22,19 @@ namespace DimensionTest.view.myControls
 
         /// <summary>
         /// Initializes a new instance of the <see cref="mytexbox"/> class with default watermark text.
-		/// </summary>
-		public mytexbox()
-		{
-		}
+        /// </summary>
+        public mytexbox()
+        {
+        }
 
-		/// <summary>
+        /// <summary>
         /// Initializes a new instance of the <see cref="mytexbox"/> class.
-		/// </summary>
-		/// <param name="watermark">The watermark to show when value is <c>null</c> or empty.</param>
+        /// </summary>
+        /// <param name="watermark">The watermark to show when value is <c>null</c> or empty.</param>
         public mytexbox(string watermark)
-		{
-			WatermarkText = watermark;
-		}
+        {
+            WatermarkText = watermark;
+        }
         //#region Text
         //public string Text
         //{
@@ -100,9 +93,9 @@ namespace DimensionTest.view.myControls
             set { SetValue(WatermarkTextProperty, value); }
         }
 
-        public static readonly DependencyProperty 
+        public static readonly DependencyProperty
             WatermarkTextProperty = DependencyProperty.Register
-            ("WatermarkText", 
+            ("WatermarkText",
             typeof(string),
             typeof(mytexbox),
             new FrameworkPropertyMetadata(string.Empty, OnWatermarkTextChanged)

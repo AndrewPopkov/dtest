@@ -18,7 +18,7 @@ namespace DimensionTest
                     public class Category : NotifyPropertyChanged
                     {
                         public string @class { get; set; }
-                        public string name { get; set { RaisePropertyChanged(() => name); } }
+                        public string name { get; set; }
                         public List<List<int>> nameHighlight { get; set; }
                     }
 

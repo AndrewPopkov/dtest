@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\Андрей\Desktop\DimensionTest\DimensionTest\obj\Debug\
+C:\Users\Андрей\Desktop\DimensionTest\dtest\DimensionTest\obj\Debug\
 DimensionTest
 none
 false
 DEBUG;TRACE
-C:\Users\Андрей\Desktop\DimensionTest\DimensionTest\App.xaml
-3-351564177
+C:\Users\Андрей\Desktop\DimensionTest\dtest\DimensionTest\App.xaml
+41758059713
 
-101843722554
-12-1401562060
-DictionarymyRes.xaml;MainWindow.xaml;view\myControls\mytexbox.xaml;
+11-1191467583
+15-782975580
+DictionarymyRes.xaml;MainWindow.xaml;Resources\Style\mytexboxStyle.xaml;view\myControls\mytexbox.xaml;
 
-False
+True
 
