@@ -6,7 +6,7 @@ namespace DimensionTest.viewmodel
     /// <summary>
     /// Реализация интерфейса ICommand.
     /// </summary>
-    public class Command : ICommand
+    public class SimpleCommand : ICommand
     {
         /// <summary>
         /// Генерируется когда поизошли изменения, которые могли повлиять на возможность выполнения команды.
@@ -71,11 +71,11 @@ namespace DimensionTest.viewmodel
         }
 
         /// <summary>
-        /// Инициализирует новый экземпляр класса <see cref="Command"/>.
+        /// Инициализирует новый экземпляр класса <see cref="SimpleCommand"/>.
         /// </summary>
         /// <param name="executeAction">Действие команды.</param>
         /// <param name="canExecuteFunc">Функция проверки возможности исполнения команды.</param>
-        public Command(Action<object> executeAction, Func<object, bool> canExecuteFunc = null)
+        public SimpleCommand(Action<object> executeAction, Func<object, bool> canExecuteFunc = null)
         {
             this.executeAction = executeAction;
             this.canExecuteFunc = canExecuteFunc;

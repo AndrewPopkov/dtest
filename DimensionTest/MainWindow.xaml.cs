@@ -26,7 +26,9 @@ namespace DimensionTest
         {
             InitializeComponent();
             viewModel = new MainViewModel();
-            viewModel.GetProperty();
+            this.grd1.DataContext = viewModel;
+            //this.datatext.Commandtexbox = viewModel.RequestCommand;
+            //this.datatext.Text = viewModel.CurentText;
         }
     }
 }

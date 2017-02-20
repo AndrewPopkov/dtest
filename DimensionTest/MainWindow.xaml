@@ -3,9 +3,30 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:local="clr-namespace:DimensionTest.view.myControls"
         Title="MainWindow" Height="650" Width="950">
-    <Grid>
-        <StackPanel>
-        <local:mytexbox x:Name="datatext"/>
-        </StackPanel>
+    <Grid Margin="10" x:Name="grd1" >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="5"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <local:texboxDescription Grid.Column="0" Grid.Row="0" x:Name="datatext" 
+                            WatermarkText="Enter text" Commandtexbox="{Binding Path=RequestCommand,Mode=TwoWay}" TextDescription="{Binding CurentText,Mode=TwoWay}"/>
+
+        <ListView x:Name="ListViewCompiler" ItemsSource="{Binding result.PartyList}" Grid.Column="1" Grid.Row="0" HorizontalAlignment="Stretch" Height="auto"  VerticalAlignment="Stretch" Width="auto">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn   Header="Список" Width="100" />
+                </GridView>
+            </ListView.View>
+        </ListView>
+        
+        <Button Grid.Column="0" Grid.Row="2" x:Name="getResult" Content="Получить список фирм" VerticalAlignment="Bottom"/>
+
+       
     </Grid>
 </Window>

@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\Андрей\Desktop\DimensionTest\dtest\DimensionTest\App.xaml
-41758059713
+31374868668
 
-11-1191467583
+13124863240
 15-782975580
-DictionarymyRes.xaml;MainWindow.xaml;Resources\Style\mytexboxStyle.xaml;view\myControls\mytexbox.xaml;
+DictionarymyRes.xaml;MainWindow.xaml;view\myControls\texboxDescription.xaml;
 
-True
+False
 
